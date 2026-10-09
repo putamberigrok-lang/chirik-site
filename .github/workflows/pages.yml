@@ -22,8 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Make the mobile cart compact
-        run: python3 .github/scripts/clean_cart.py
       - name: Enable GitHub Pages if not enabled
         env:
           GH_TOKEN: ${{ github.token }}
